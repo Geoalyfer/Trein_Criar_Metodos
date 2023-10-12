@@ -1,0 +1,43 @@
+Métodos são funções criadas dentro de uma classe.
+
+ferrari.hello_car()
+
+O parâmetro self deve ser definido para a função da classe.
+
+class Carro:
+    def hello_car(self):
+        print('Hello Car!')
+
+porshe.hello_car()
+
+kombi = Carro()
+
+kombi.hello_car()
+Hello Car!
+
+
+Método construtor
+É método que sempre é executado quando um objeto da classe é instanciado
+
+def __init__:
+
+O formato do método construtor é escrito com o uso de dois underscore __ + init + __ : e é executado para instanciar o objeto.
+
+class Carro:
+    
+    def __init__(self, cor, marca):
+        self.marca = marca
+        self.cor = cor
+        self.dono = 'Vinicius'
+
+kicks = Carro('Azul', 'Nissan')
+kicks.hello_car()
+
+ferrari.dono
+'Vinicius'
+
+ferrari.retorna_marca()
+'Ferrari'
+
+kombi.retorna_marca()
+'VW'
